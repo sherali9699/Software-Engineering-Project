@@ -1,0 +1,137 @@
+
+.main-header {
+    background-color: #744515;
+    padding: 20px 0;
+    position: relative;
+  }
+  
+  .logo {
+    display: block;
+  }
+  
+  .logo img {
+    max-width: 100%;
+    position: absolute;
+    left: 0;
+    top: -20px;
+    z-index: 1;
+  }
+  
+  .menu-Bar {
+    display: none;
+    cursor: pointer;
+    width: 30px;
+    height: 21px;
+    z-index: 9;
+  }
+  
+  .menu-Bar span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: #fff;
+    transition: 0.4s;
+  }
+  
+  .menu-Bar span:nth-child(2) {
+    margin: 5px 0;
+  }
+  
+  .menu-Bar.open span:nth-child(1) {
+    transform: rotate(45deg);
+    position: relative;
+    top: 8px;
+  }
+  
+  .menu-Bar.open span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .menu-Bar.open span:nth-child(3) {
+    transform: rotate(-45deg);
+    position: relative;
+    top: -8px;
+  }
+  
+  .menuWrap {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 34px;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    font-family: 'Philosopher';
+    font-size: 16px;
+  }
+  
+  .menu li a.active {
+    text-decoration: underline;
+    text-decoration-color: white; /* Set underline color to white */
+  }
+  
+  
+  .overlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+  }
+  
+  .overlay.active {
+    display: block;
+  }
+  
+  
+  @media (max-width: 991px) {
+    .main-header {
+      height: 70px;
+    }
+  
+    .menu-Bar {
+      display: block;
+      position: absolute;
+      right: 20px;
+      top: 26px;
+    }
+  
+    .menuWrap {
+      width: 100%;
+      align-items: center;
+      background-color: #333;
+      position: fixed;
+      top: 0;
+      right: -100%;
+      height: 100vh;
+      transition: all 0.4s ease-in-out;
+      z-index: 2;
+    }
+  
+    .menuWrap.open {
+      right: -50%;
+      padding-left: 5%;
+      z-index: 3;
+    }
+  
+    .menu {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+      gap: 20px;
+    }
+  
+    .menu li {
+      margin: 0;
+    }
+  }
