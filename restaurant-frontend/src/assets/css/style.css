@@ -99,34 +99,20 @@ header .navbar button{
     margin-left: 8px;
 }
 
-/* home section */
 
-.home .home-text{
-    margin-top: 7rem;
-    padding: 3rem 0 0 0;
-}
-
-.home .home-image img{
-    width: 90%;
-    height: 95%;
-}
-
-.home .home-text .fir{
-    color: var(--primary-color);
-}
-
-.home .home-text button{
-    margin-top: 1rem;
-}
-
+/* Home */
 .home .home-image2 img{
-    width: 100%;
-    height: 60%;
+    width: 90%;
+    height: 10rem;
 }
 
-/* about section */
+
+
+
+/* about */
 .about{
     background-color: var(--bg-gray);
+    padding-bottom: 4rem;
 }
 
 .about .about-us,.about .about-image{
@@ -145,22 +131,23 @@ header .navbar button{
 }
 
 .about .about-image img{
-    height: 80%;
     height: 60%;
+    width: 100%;
     margin-top: 8rem;
 }
 
 
-/* menu section
+/* Menu*/
 .menu{
     width: 100%;
-    height: auto;
-    background-image: url('../images/food-menu-banner.jpg');
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+    height: 100%;
+    background-image: url('../Images/food-menu-banner.jpg');
     background-size: cover;
     background-color: var(--bg-dark);
-} */
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
 .menu .row{
     padding-top: 20%;
     padding-bottom: 5%;
@@ -168,7 +155,7 @@ header .navbar button{
 
 .menu .menu-card{
     background-color: var(--secondary-color);
-    padding: 10px 10px 20px;
+    padding: 10px 10px 15px;
     border-radius: 15px;
 }
 
@@ -184,11 +171,11 @@ header .navbar button{
 }
 
 .menu .menu-card .he h3{
-    display: inline-block;
     color: var(--text-white);
+    display: inline-block;
     font-size: 1.5rem;
     margin-left: 10%;
-    margin-bottom: 2%;
+    margin-top: 2%;
 }
 
 .menu .menu-card p{
@@ -196,65 +183,17 @@ header .navbar button{
     padding-top: .7rem;
 }
 
-
-/* offer section*/
-.offer{
-    padding: 3rem 0 2rem;
-}
-
-.offer .title h3{
-    font-weight: bold;
-}
-.offer .title p{
-    font-size: medium;
-    font-weight: 500;
-    font-family: var(--secondary-font);
-}
-
-.offer .offer-image img{
-    width: 100%;
-    height: 80%;
-}
-
-.offer .offer-text{
-    width: 50%;
-    position: absolute;
-    top: 0;
-    left: 12px;
-    padding: 2rem 0;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.offer .offer-text h3{
-    color: var(--text-white);
-    letter-spacing: 0;
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-
-.offer .offer-text span{
-    display: block;
-    color: var(--primary-text);
-    font-size: .9rem;
-    margin-bottom: .5rem;
-}
-
-.offer .offer-text .btn-main{
-    font-size: .7rem;
-    margin-top: 1rem;
-}
-
 /* review section */
-/* .review{
+.review{
     padding: 4rem 0;
     width: 100%;
     height: auto;
-    background-image: url('../images/review-banner.jpg');
+    background-image: url('../Images/review-banner.jpg');
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
     background-color: var(--bg-dark);
-} */
+}
 
 .review .row{
     padding: 3rem 0;
@@ -292,7 +231,6 @@ header .navbar button{
     right:-2.37rem;
 }
 
-
 /* final section */
 .contact{
     padding: 1.5rem 0;
@@ -306,12 +244,3 @@ header .navbar button{
     padding: 0rem .7rem;
     font-size: 2rem;
 }
-
-
-
-
-
-
-
-
-
