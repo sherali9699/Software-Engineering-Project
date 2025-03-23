@@ -11,3 +11,4 @@ router.get('/profile', authMiddleware, getUserProfile); // Protect route
 
 
 module.exports = router;
+ 
