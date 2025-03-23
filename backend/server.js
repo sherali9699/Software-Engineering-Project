@@ -23,6 +23,10 @@ const menuRoutes = require('./routes/menuRoutes');
 app.use('/api/menu', menuRoutes);
 
 
+const orderRoutes = require('./routes/orderRoutes');
+app.use('/api/orders', orderRoutes);
+
+
 // Start the server
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
