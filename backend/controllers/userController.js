@@ -1,27 +1,12 @@
-const bcrypt = require('bcryptjs');
-const User = require('../models/User');
+const { User } = require("../models/models");
 
-exports.updateProfile = async (req, res) => {
-    try {
-        const { name, email, password } = req.body;
-
-        // Find user by ID
-        let user = await User.findById(req.user.id);
-        if (!user) {
-            return res.status(404).json({ message: 'User not found' });
-        }
-
-        // Update fields if provided
-        if (name) user.name = name;
-        if (email) user.email = email;
-        if (password) {
-            user.password = await bcrypt.hash(password, 10); // Hash new password
-        }
-
-        // Save updated user
-        await user.save();
-        res.json({ message: 'Profile updated successfully', user });
-    } catch (err) {
-        res.status(500).json({ message: 'Server error', error: err.message });
-    }
+// Get all users
+exports.getAllUsers = async (req, res) => {
+  try {
+    const users = await User.find(); // Fetch all users from MongoDB
+    res.status(200).json(users);
+  } catch (err) {
+    console.error("Error fetching users:", err);
+    res.status(500).json({ message: "Server error", error: err.message });
+  }
 };
