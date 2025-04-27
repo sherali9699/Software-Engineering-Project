@@ -15,6 +15,11 @@ import ModifyItems from "./components/dashboard/modifyitems";
 import CheckOrders from "./components/dashboard/checkorders";
 import CheckUsers from "./components/dashboard/checkusers";
 import CheckItems from "./components/dashboard/checkitems";
+import Signup from "./components/User/signup";
+import Login from "./components/User/login";
+import Cart from "./components/order/cart";
+
+
 
 function App() {
   return (
@@ -23,6 +28,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Mainpage />} />
+          <Route path="/cart" element={<Cart />} />
           <Route path='/admin/admindashboard' element={<AdminDashboard/>}/>
             <Route path="/admin/additem" element={<AddItem />} />
             <Route path="/admin/delete-item" element={<DeleteItem />} />
@@ -30,6 +36,8 @@ function App() {
             <Route path="/admin/check-orders" element={<CheckOrders />} />
             <Route path="/admin/check-users" element={<CheckUsers />} />
             <Route path="/admin/check-items" element={<CheckItems />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
       </BrowserRouter>
     </div>

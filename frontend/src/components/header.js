@@ -15,7 +15,7 @@ const Header = () => {
       <div className="container">
         <nav className="navbar navbar-expand-lg">
           <div className="container-fluid">
-            <a className="navbar-brand" href="#">
+            <a className="navbar-brand" href="#home">
               <img src={Mainlogo} alt="logo" className="img-fluid" />
             </a>
             <button
@@ -60,11 +60,11 @@ const Header = () => {
                     Review
                   </a>
                 </li>
-                <li className="nav-item mt-3 mt-lg-0">
+                {/* <li className="nav-item mt-3 mt-lg-0">
                   <a className="nav-link" href="#">
                     <button className="btn-main">Order Online</button>
                   </a>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
